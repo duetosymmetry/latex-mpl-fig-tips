@@ -287,4 +287,6 @@ TSWLatexianTemp*
 
 ## LCS Added
 # Generated PDF
-notes-template.pdf
+latex-mpl-fig-tips.pdf
+
+.ipynb_checkpoints

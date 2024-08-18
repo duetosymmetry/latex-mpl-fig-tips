@@ -12,12 +12,12 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: notes-template.tex
+          root_file: latex-mpl-fig-tips.tex
       - name: Commit to orphan branch
         run: |
           git checkout --orphan gh-action-result/pdflatex
           git rm -rf .
-          git add notes-template.pdf
+          git add latex-mpl-fig-tips.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Built paper"
       - name: Push changes
         uses: ad-m/github-push-action@master

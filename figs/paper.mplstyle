@@ -1,0 +1,86 @@
+## See https://matplotlib.org/stable/tutorials/introductory/customizing.html#a-sample-matplotlibrc-file
+
+text.usetex: True
+text.latex.preamble: \usepackage{amsmath}\usepackage{amssymb}
+font.family: serif
+font.serif: Computer Modern
+savefig.bbox: tight
+savefig.format: pdf
+
+lines.linewidth: .5
+
+## ***************************************************************************
+## * AXES                                                                    *
+## ***************************************************************************
+axes.linewidth:     0.5     # edge line width
+axes.labelsize:     10  # font size of the x and y labels
+axes.labelpad:      3.0     # space between label and axis
+#axes.labelweight:   normal  # weight of the x and y labels
+axes.grid: True
+axes.grid.axis: y
+
+grid.linewidth: 0.2
+
+## ***************************************************************************
+## * TICKS                                                                   *
+## ***************************************************************************
+## See https://matplotlib.org/api/axis_api.html#matplotlib.axis.Tick
+xtick.top:           True   # draw ticks on the top side
+# xtick.bottom:        True    # draw ticks on the bottom side
+# xtick.labeltop:      False   # draw label on the top
+# xtick.labelbottom:   True    # draw label on the bottom
+# xtick.major.size:    3     # major tick size in points
+# xtick.minor.size:    1.5       # minor tick size in points
+xtick.major.width:   .3     # major tick width in points
+# xtick.minor.width:   .3     # minor tick width in points
+# xtick.major.pad:     2     # distance to major tick label in points
+# xtick.minor.pad:     2     # distance to the minor tick label in points
+# xtick.color:         black   # color of the ticks
+# xtick.labelcolor:    inherit # color of the tick labels or inherit from xtick.color
+xtick.labelsize:     8  # font size of the tick labels
+xtick.direction:     in     # direction: {in, out, inout}
+# xtick.minor.visible: True   # visibility of minor ticks on x-axis
+# xtick.major.top:     True    # draw x axis top major ticks
+# xtick.major.bottom:  True    # draw x axis bottom major ticks
+# xtick.minor.top:     False    # draw x axis top minor ticks
+# xtick.minor.bottom:  False    # draw x axis bottom minor ticks
+# xtick.alignment:     center  # alignment of xticks
+#
+# ytick.left:          True    # draw ticks on the left side
+ytick.right:         True   # draw ticks on the right side
+# ytick.labelleft:     True    # draw tick labels on the left side
+# ytick.labelright:    False   # draw tick labels on the right side
+# ytick.major.size:    3     # major tick size in points
+# ytick.minor.size:    1.5       # minor tick size in points
+# ytick.major.width:   .3     # major tick width in points
+# ytick.minor.width:   .3     # minor tick width in points
+# ytick.major.pad:     2     # distance to major tick label in points
+# ytick.minor.pad:     2     # distance to the minor tick label in points
+# ytick.color:         black   # color of the ticks
+# ytick.labelcolor:    inherit # color of the tick labels or inherit from ytick.color
+ytick.labelsize:     8  # font size of the tick labels
+ytick.direction:     in     # direction: {in, out, inout}
+# ytick.minor.visible: True   # visibility of minor ticks on y-axis
+# ytick.major.left:    True    # draw y axis left major ticks
+# ytick.major.right:   True    # draw y axis right major ticks
+# ytick.minor.left:    True    # draw y axis left minor ticks
+# ytick.minor.right:   True    # draw y axis right minor ticks
+# ytick.alignment:     center_baseline  # alignment of yticks
+
+## ***************************************************************************
+## * LEGEND                                                                  *
+## ***************************************************************************
+legend.loc:           upper right
+legend.frameon:       False     # if True, draw the legend on a background patch
+# legend.framealpha:    0.8      # legend patch transparency
+# legend.fancybox:      True     # if True, use a rounded box for the
+                                # legend background, else a rectangle
+#legend.markerscale:   1.0      # the relative size of legend markers vs. original
+legend.fontsize:      6
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+## ***************************************************************************
+# figure.figsize:     3.4, 2.55  # figure size in inches
+figure.dpi:         300       # figure dots per inch
+# figure.frameon:     True      # enable figure frame
